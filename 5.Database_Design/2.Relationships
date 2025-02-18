@@ -1,0 +1,5 @@
+######---Relationships----######
+A student can enroll in many courses (many-to-many).
+A course can have many students (many-to-many).
+A course is taught by exactly one instructor (one-to-many).
+An instructor can teach multiple courses (one-to-many).

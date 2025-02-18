@@ -1,0 +1,5 @@
+####---Entities & Attributes----######
+Students (Student_ID, Name, Email, Phone, Date_of_Birth)
+Courses (Course_ID, Course_Name, Credits, Department)
+Instructors (Instructor_ID, Name, Email, Office_Room)
+Enrollments (Enrollment_ID, Student_ID, Course_ID)

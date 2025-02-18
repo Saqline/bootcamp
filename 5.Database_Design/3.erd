@@ -1,0 +1,21 @@
++-------------------+          +-------------------+          +-------------------+
+|     Students      |          |     Enrollments   |          |      Courses      |
++-------------------+          +-------------------+          +-------------------+
+| PK Student_ID     |<-------->| PK Enrollment_ID  |<-------->| PK Course_ID      |
+| Name              |          | FK Student_ID     |          | Course_Name       |
+| Email             |          | FK Course_ID      |          | Credits           |
+| Phone             |          +-------------------+          | Department        |
+| Date_of_Birth     |                                         | FK Instructor_ID  |
++-------------------+                                         +-------------------+
+                                                                          
+                                                                          |
+                                                                          |
+                                                                          v
+                                                                 +-------------------+
+                                                                 |    Instructors    |
+                                                                 +-------------------+
+                                                                 | PK Instructor_ID  |
+                                                                 | Name              |
+                                                                 | Email             |
+                                                                 | Office_Room       |
+                                                                 +-------------------+

@@ -1,0 +1,31 @@
+CREATE TABLE Students (
+    Student_ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Email VARCHAR(100) UNIQUE,
+    Phone VARCHAR(15),
+    Date_of_Birth DATE
+);
+
+CREATE TABLE Instructors (
+    Instructor_ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Email VARCHAR(100) UNIQUE,
+    Office_Room VARCHAR(50)
+);
+
+CREATE TABLE Courses (
+    Course_ID INT PRIMARY KEY,
+    Course_Name VARCHAR(100),
+    Credits INT,
+    Department VARCHAR(100),
+    Instructor_ID INT,
+    FOREIGN KEY (Instructor_ID) REFERENCES Instructors(Instructor_ID) ON DELETE CASCADE
+);
+
+CREATE TABLE Enrollments (
+    Enrollment_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Student_ID INT,
+    Course_ID INT,
+    FOREIGN KEY (Student_ID) REFERENCES Students(Student_ID) ON DELETE CASCADE,
+    FOREIGN KEY (Course_ID) REFERENCES Courses(Course_ID) ON DELETE CASCADE
+);
