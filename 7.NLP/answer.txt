@@ -1,0 +1,48 @@
+##Preprocessing Steps##
+*Remove special characters, URLs, mentions, and stopwords
+*Convert text to lowercase, apply lemmatization/stemming
+*Tokenization and handling imbalanced classes
+
+###Converting Tweets to Numerical Representations
+*TF-IDF: Captures word importance based on document frequency
+*CountVectorizer: Creates a frequency-based sparse matrix
+*Word2Vec: Learns contextual word embeddings
+
+###Sampling Techniques
+*Oversampling: Duplicates minority class samples
+*Undersampling: Reduces majority class samples
+*SMOTE: Generates synthetic samples for the minority class
+
+###Evaluation Metrics
+*F1-score: Balances precision & recall (best for imbalanced data)
+*AUC-ROC: Measures model's ability to distinguish classes
+*Accuracy: Works if classes are balanced
+
+###Random Forest Hyperparameters & Optimization
+Crucial Hyperparameters: n_estimators, max_depth, min_samples_split
+Optimization: Use GridSearchCV (exhaustive) or RandomizedSearchCV (faster)
+
+###Handling Text Data: CNN vs. LSTM
+CNN: Captures local patterns, efficient for short texts
+LSTM: Captures sequential dependencies, better for long texts
+
+###Choosing CNN vs. LSTM
+Short Tweets → CNN (fast & captures key phrases)
+Long Reviews → LSTM (better sequence understanding)
+
+###BERT vs. Word2Vec/TF-IDF
+BERT: Context-aware, bidirectional, captures nuanced meanings
+Word2Vec: Learns word embeddings but lacks context per sentence
+TF-IDF: Simple frequency-based, no semantic meaning
+###Improving Sentiment Classification Performance
+
+Fine-tuning: Adjust pre-trained model weights
+Freezing Layers: Keeps lower layers frozen, fine-tunes higher layers
+
+###Fine-tuning an LLM for Sentiment Analysis
+Preprocess & tokenize dataset
+Load a pre-trained model (e.g., BERT)
+Add a classification head
+Fine-tune on labeled sentiment data
+Use learning rate scheduling & regularization
+Evaluate with F1-score & AUC-ROC
