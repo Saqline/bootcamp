@@ -19,23 +19,23 @@
 *Accuracy: Works if classes are balanced
 
 ###Random Forest Hyperparameters & Optimization
-Crucial Hyperparameters: n_estimators, max_depth, min_samples_split
-Optimization: Use GridSearchCV (exhaustive) or RandomizedSearchCV (faster)
+*Crucial Hyperparameters: n_estimators, max_depth, min_samples_split
+*Optimization: Use GridSearchCV (exhaustive) or RandomizedSearchCV (faster)
 
 ###Handling Text Data: CNN vs. LSTM
-CNN: Captures local patterns, efficient for short texts
-LSTM: Captures sequential dependencies, better for long texts
+*CNN: Captures local patterns, efficient for short texts
+*LSTM: Captures sequential dependencies, better for long texts
 
 ###Choosing CNN vs. LSTM
-Short Tweets → CNN (fast & captures key phrases)
-Long Reviews → LSTM (better sequence understanding)
+*Short Tweets → CNN (fast & captures key phrases)
+*Long Reviews → LSTM (better sequence understanding)
 
 ###BERT vs. Word2Vec/TF-IDF
-BERT: Context-aware, bidirectional, captures nuanced meanings
-Word2Vec: Learns word embeddings but lacks context per sentence
-TF-IDF: Simple frequency-based, no semantic meaning
-###Improving Sentiment Classification Performance
+*BERT: Context-aware, bidirectional, captures nuanced meanings
+*Word2Vec: Learns word embeddings but lacks context per sentence
+*TF-IDF: Simple frequency-based, no semantic meaning
 
+###Improving Sentiment Classification Performance
 Fine-tuning: Adjust pre-trained model weights
 Freezing Layers: Keeps lower layers frozen, fine-tunes higher layers
 
