@@ -36,8 +36,8 @@
 *TF-IDF: Simple frequency-based, no semantic meaning
 
 ###Improving Sentiment Classification Performance
-Fine-tuning: Adjust pre-trained model weights
-Freezing Layers: Keeps lower layers frozen, fine-tunes higher layers
+*Fine-tuning: Adjust pre-trained model weights
+*Freezing Layers: Keeps lower layers frozen, fine-tunes higher layers
 
 ###Fine-tuning an LLM for Sentiment Analysis
 Preprocess & tokenize dataset
