@@ -40,9 +40,9 @@
 *Freezing Layers: Keeps lower layers frozen, fine-tunes higher layers
 
 ###Fine-tuning an LLM for Sentiment Analysis
-Preprocess & tokenize dataset
-Load a pre-trained model (e.g., BERT)
-Add a classification head
-Fine-tune on labeled sentiment data
-Use learning rate scheduling & regularization
-Evaluate with F1-score & AUC-ROC
+*Preprocess & tokenize dataset
+*Load a pre-trained model (e.g., BERT)
+*Add a classification head
+*Fine-tune on labeled sentiment data
+*Use learning rate scheduling & regularization
+*Evaluate with F1-score & AUC-ROC
